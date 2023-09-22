@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">DailyDietApplication</string>
+
+    <!-- Titles -->
+    <string name="meals">Refeições</string>
+    <string name="meal">Refeição</string>
+    <string name="edit_meal">Editar refeição</string>
+    <string name="statistic_general">Estatísticas geral</string>
+    <string name="new_meal">Nova refeição</string>
+    <string name="name">Nome</string>
+    <string name="description">Descrição</string>
+    <string name="question_about_diet">Está dentro da dieta?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="congratulation">Continue assim!</string>
+    <string name="shame">Que pena!</string>
+    <string name="button_register_meal">Cadastrar refeição</string>
+    <string name="button_go_home">Ir para página inicial</string>
+    <string name="button_save_edit">Salvar alterações</string>
+    <string name="button_edit_meal">Editar refeição</string>
+    <string name="button_remove_meal">Excluir refeição</string>
+    <string name="button_alert_remove_meal_message">Deseja realmente excluir o registro da refeição?</string>
+    <string name="button_cancel">Cancelar</string>
+    <string name="button_confirm_remove">Sim, excluir</string>
+    <string name="tag_in_diet">dentro da dieta</string>
+    <string name="tag_out_diet">fora da dieta</string>
+
+    <!-- Texts body -->
+    <string name="generic_text">texto genérico de exemplo</string>
+    <string name="generic_percent">99,99%</string>
+    <string name="generic_text_date_hour">Data e hora</string>
+    <string name="generic_hour">20:00</string>
+    <string name="generic_date">28.04.23</string>
+    <string name="generic_register">20</string>
+    <string name="percent_meals_in_diet">das refeições dentro da dieta</string>
+    <string name="meals_registered">refeições registradas</string>
+    <string name="meals_in_diet">refeições dentro da dieta</string>
+    <string name="meals_out_diet">refeições fora da dieta</string>
+    <string name="congratulation_message">Você continua dentro da dieta. Muito bem!</string>
+    <string name="shame_message">Você saiu da dieta dessa vez, mas continue se esforçando e não desista!</string>
+
+
+</resources>

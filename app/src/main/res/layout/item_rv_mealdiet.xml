@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/itemRvMealDiet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textDateHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingBottom="@dimen/padding_8"
+        android:text="@string/generic_date"
+        android:textColor="@color/gray_1"
+        android:textSize="@dimen/font_size_18"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/itemFrameButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="@dimen/margin_8"
+        android:background="@drawable/item_border_rvmealdiet"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/gray_5"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDateHeader">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textHourItemMealDiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="@string/generic_hour"
+                android:textColor="@color/gray_1"
+                android:textSize="@dimen/font_size_12"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="@dimen/margin_16"
+                android:background="@color/gray_4"
+                app:layout_constraintBottom_toBottomOf="@+id/textHourItemMealDiet"
+                app:layout_constraintStart_toEndOf="@+id/textHourItemMealDiet"
+                app:layout_constraintTop_toTopOf="@+id/textHourItemMealDiet" />
+
+            <TextView
+                android:id="@+id/textItemMealDiet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16"
+                android:fontFamily="@font/nunito_sans"
+                android:text="@string/generic_text"
+                android:textColor="@color/gray_2"
+                android:textSize="@dimen/font_size_16"
+                app:layout_constraintBottom_toBottomOf="@+id/textHourItemMealDiet"
+                app:layout_constraintStart_toEndOf="@+id/divider"
+                app:layout_constraintTop_toTopOf="@+id/textHourItemMealDiet" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/alertDietInOrOut"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginEnd="@dimen/margin_16"
+                app:cardBackgroundColor="@color/gray_3"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/textItemMealDiet"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textItemMealDiet" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

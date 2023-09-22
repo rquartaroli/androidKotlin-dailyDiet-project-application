@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape_white_rectangle"
+    android:paddingTop="@dimen/padding_32"
+    android:paddingStart="@dimen/padding_24"
+    android:paddingEnd="@dimen/padding_24"
+    android:paddingBottom="@dimen/padding_24">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/button_alert_remove_meal_message"
+        style="@style/label_generic_bold"
+        android:textSize="@dimen/font_size_18"
+        android:textAlignment="center"
+        android:layout_marginBottom="@dimen/margin_24"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonCancelRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_cancel"
+            android:background="@drawable/ripple_button_variant"
+            android:textColor="@color/gray_2"
+            android:padding="@dimen/padding_24"
+            android:layout_weight="10"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+        <Button
+            android:id="@+id/buttonRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_default"
+            android:padding="@dimen/padding_24"
+            android:layout_weight="10"
+            android:text="@string/button_confirm_remove"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</LinearLayout>

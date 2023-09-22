@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_7"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/padding_24"
+    android:paddingEnd="@dimen/padding_24"
+    tools:context=".presentation.ui.CongratulationActivity">
+
+    <TextView
+        android:id="@+id/messageMotivational"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="@string/congratulation"
+        android:textAlignment="center"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/font_size_24" />
+
+    <TextView
+        android:id="@+id/congratulationPhrase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:fontFamily="@font/nunito_sans"
+        android:text="@string/congratulation_message"
+        android:textAlignment="center"
+        android:textColor="@color/gray_1"
+        android:textSize="@dimen/font_size_16" />
+
+    <ImageView
+        android:id="@+id/imageCongratulation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_32"
+        android:contentDescription="@string/congratulation_message"
+        app:srcCompat="@drawable/img_congratulation" />
+
+    <Button
+        android:id="@+id/buttonGoHome"
+        style="@style/button_generic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingStart="@dimen/padding_24"
+        android:paddingTop="@dimen/padding_16"
+        android:paddingEnd="@dimen/padding_24"
+        android:paddingBottom="@dimen/padding_16"
+        android:text="@string/button_go_home" />
+</LinearLayout>
